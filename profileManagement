@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Profile Management</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- nav bar begin -->
+  
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="homepage.html">Fuel Price Estimator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="quoteHistory.html">Fuel Quote History</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="profileManagement.html">Profile Management</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+  <!-- nav bar end, include bootstrap stylesheet and script-->
+    <h1>Profile</h1>
+    <form>
+        <h3>Name*</h3>
+        <input class="box" type="text" maxlength="50" oninvalid="this.setCustomValidity('Required')" oninput="setCustomValidity('')" placeholder="Enter Full Name" required>
+        <h3>Address Line 1*</h3>
+        <input class="box" type="text" maxlength="100" oninvalid="this.setCustomValidity('Required')" oninput="setCustomValidity('')" placeholder="Enter Address Line 1" required>
+        <h3>Address Line 2</h3>
+        <input class="box" type="text" maxlength="100" placeholder="Enter Address Line 2">
+        <h3>City*</h3>
+        <input class="box" type="text" maxlength="100" oninvalid="this.setCustomValidity('Required')" oninput="setCustomValidity('')" placeholder="Enter City" required>
+        <h3>State*</h3>
+        <select class="box" oninvalid="this.setCustomValidity('Selection required')" oninput="setCustomValidity('')" required>
+            <option value="" disabled selected>Select State</option>
+            <option value="AL">AL</option>
+            <option value="AK">AK</option>
+            <option value="AR">AR</option>
+            <option value="AZ">AZ</option>
+            <option value="CA">CA</option>
+            <option value="CO">CO</option>
+            <option value="CT">CT</option>
+            <option value="DC">DC</option>
+            <option value="DE">DE</option>
+            <option value="FL">FL</option>
+            <option value="GA">GA</option>
+            <option value="HI">HI</option>
+            <option value="IA">IA</option>
+            <option value="ID">ID</option>
+            <option value="IL">IL</option>
+            <option value="IN">IN</option>
+            <option value="KS">KS</option>
+            <option value="KY">KY</option>
+            <option value="LA">LA</option>
+            <option value="MA">MA</option>
+            <option value="MD">MD</option>
+            <option value="ME">ME</option>
+            <option value="MI">MI</option>
+            <option value="MN">MN</option>
+            <option value="MO">MO</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="NC">NC</option>
+            <option value="NE">NE</option>
+            <option value="NH">NH</option>
+            <option value="NJ">NJ</option>
+            <option value="NM">NM</option>
+            <option value="NV">NV</option>
+            <option value="NY">NY</option>
+            <option value="ND">ND</option>
+            <option value="OH">OH</option>
+            <option value="OK">OK</option>
+            <option value="OR">OR</option>
+            <option value="PA">PA</option>
+            <option value="RI">RI</option>
+            <option value="SC">SC</option>
+            <option value="SD">SD</option>
+            <option value="TN">TN</option>
+            <option value="TX">TX</option>
+            <option value="UT">UT</option>
+            <option value="VT">VT</option>
+            <option value="VA">VA</option>
+            <option value="WA">WA</option>
+            <option value="WI">WI</option>
+            <option value="WV">WV</option>
+            <option value="WY">WY</option>
+        </select>
+        <h3>Zip Code*</h3>
+        <input class="box" type="text" minlength="5" maxlength="9" oninvalid="this.setCustomValidity('At least 5 digits required')" oninput="setCustomValidity('')" oninput="setCustomValidity('')" placeholder="Enter Zip Code" required>
+        <p>* Required</p>
+        <input class="submit" type="submit" value="Save" required> <!-- after save, return to homepage -->
+    </form>
+</body>
+</html>
