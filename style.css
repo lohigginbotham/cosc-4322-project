@@ -24,6 +24,9 @@ h3 {
     margin-bottom: 5px;
     margin-left: 5%;
 }
+.rnd{
+  font-size: 11pt;
+}
 
 p {
     color: #98C1D9;
@@ -153,11 +156,41 @@ color: #DD5540 !important;
 }
 
 .center {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px;
+	text-align: center;
+	vertical-align: middle;
+  
 }
 
 .readOnly {
   background-color: #DDE3E0;
-  opacity: .6
+  opacity: .6;
+}
+.genTbl {
+  float: right;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 14px 20px;
+  color: #DD5540;
+  border: none;
+  background-color: #98C1D9;
+  transition-duration: 0.4s;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.genTbl:hover {
+  background-color: #4C94BD;
+  color: white;
+}
+
+.quote-info{
+  border: 4px solid #DDE3E0 ;
+  background-color: #DDE3E0;
+  margin: 20px;
+  padding: 5px;
+  width: fit-content;
+  vertical-align: middle;
+  overflow-wrap: break-word;
 }
