@@ -156,3 +156,8 @@ color: #DD5540 !important;
   margin-left: auto;
   margin-right: auto;
 }
+
+.readOnly {
+  background-color: #DDE3E0;
+  opacity: .6
+}
