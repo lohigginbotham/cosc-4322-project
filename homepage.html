@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>User Homepage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  
+<body>
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="homepage.html">Fuel Price Estimator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="quoteHistory.html">Fuel Quote History</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="profileManagement.html">Profile Management</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <form>
+    <h3>Requested Gallons*</h3>
+    <input class="box" type="text" maxlength="3" id="requestedGallons" oninvalid="this.setCustomValidity('Required')" oninput="setCustomValidity('')" placeholder="Enter Gallon Amount" required>
+    
+    <h3>Delivery Date*</h3>
+    <input class="box" type="date" value="2000-01-01" oninvalid="this.setCustomValidity('Required')" oninput="setCustomValidity('')" required>
+    <!deliveryAddress,suggestedPPG,amountDue>
+
+    <div class="readOnly">
+      <h3>Delivery Address*</h3>
+      <input type="text" value="profileManagement.html?id=userAddress" readonly>
+     
+
+      <h3>Suggested Price*</h3>
+      <input type="text" value="priceModulePlaceholder" readonly>
+
+      <h3>Total Amount Due</h3>
+        <input type="text" value="suggestedPPG*requestedGallonsPlaceholder" readonly>
+            <!--Replace placeholder with value of suggested price input * requested gallons input-->
+    </div>
+    
+
+  </form> 
+    <!--"read only boxes will autocomplete as user fills in -->
+    
+</body>
+  
+</html>

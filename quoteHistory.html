@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quote History</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="homepage.html">Fuel Price Estimator</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item"><a class="nav-link" href="login.html"> Login</a></li>
+            <li class="nav-item "><a class="nav-link" href="profileManagement.html"> Profile Management</a></li>
+            <li class="nav-item"></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- nav bar end, include bootstrap stylesheet and script-->
+  <div class="quote_generator">
+    <button class="genTbl" onclick="generateTable()">Generate Quote History</button>
+    <h1>Quote History</h1>
+  </div>
+  <div class="quote-info">
+
+    <h3 class="rnd">This is a summary of all previous, fuel cost quotes for this current user.</h3>
+    <h3 class="rnd">It contains: </h3>
+    <h3 class="rnd">Gallons Requested (numeric, required)</h3>
+    <h3 class="rnd">- Delivery Address (Non-editable, comes from client profile)</h3>
+    <h3 class="rnd">- Delivery Date (Calender, date picker)</h3>
+    <h3 class="rnd">- Suggested Price / gallon (numeric non-editable, price will be calculated by Pricing Module)</h3>
+    <h3 class="rnd">- Total Amount Due (numeric non-editable, calculated (gallons * price))</h3>
+
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
